@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "manga";
-  src: url("../Fonts/manga-font/Manga-4vx6.ttf") format("truetype");
+  font-family: "Kosugi_Maru";
+  src: url("../Fonts/Kosugi_Maru/KosugiMaru-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 
 html,
 body {
-  color: white;
+  color: rgb(228, 17, 17);
   background-color: #01010100;
   background-image: url("../Images/bg.jpg");
   width: 100%;
