@@ -38,11 +38,10 @@ header, main{
     letter-spacing: 5px;
 }
 
-
 header h1{
     text-align: center;
     font-family: 'Kosugi_Maru';
-    font: 11vw;
+    font-size: 11vw;
     font-size-adjust: auto;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
