@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: 'manga';
-  src: url('Fonts/manga-font/Manga-4vx6.ttf') format('truetype');
+  font-family: 'Kosugi_Maru';
+  src: url('Fonts/Kosugi_Maru/KosugiMaru-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -33,7 +33,7 @@ header, main{
     margin: 5px;
     text-align: center;
     font-weight: lighter;
-    color:white;
+    color:rgb(214, 14, 14);
     text-size-adjust:auto;
     letter-spacing: 5px;
 }
