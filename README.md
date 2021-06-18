@@ -4,7 +4,7 @@
 
 <div align="center">
     <a href="https://ankushKun.github.io/projects/animedoro-timer/Animedoro.html">
-        <img src="./Animedoro/Images/icon.png" width="30%">
+        <img src="./Images/icon.png" width="30%">
     </a>
 </div>
 
@@ -25,10 +25,10 @@ productivity : 📈
 
 ## Screenshots
 
-![homepage](./Animedoro/Images/homepage.png)
-![timer](./Animedoro/Images/timer.png)
-![notification](./Animedoro/Images/notif.PNG)
-![notification on mac](./Animedoro/Images/notif_mac.png)
+![homepage](./Images/homepage.png)
+![timer](./Images/timer.png)
+![notification](./Images/notif.PNG)
+![notification on mac](./Images/notif_mac.png)
 
 ## TODO
 
