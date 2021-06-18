@@ -1,5 +1,7 @@
 # Animedoro Timer ⏱
 
+## Note: this is an edit made by myself because I didn't like the font of the page used for the original Animedoro.
+
 <div align="center">
     <a href="https://ankushKun.github.io/projects/animedoro-timer/Animedoro.html">
         <img src="./Animedoro/Images/icon.png" width="30%">
@@ -17,7 +19,9 @@ and continue the cycle.\
 **_For more info watch this video by [Josh Chen](https://www.youtube.com/watch?v=bUjGZJIgse0)_**\
 productivity : 📈
 
-## Use the **[animedoro timer](https://ankushKun.github.io/projects/animedoro-timer/Animedoro/index.html)** 😄
+## Use the **[EDITED animedoro timer](https://jenblonko.github.io/)** 😄
+## Use the **[ORIGINAL animedoro timer](https://ankushKun.github.io/projects/animedoro-timer/Animedoro/index.html)** 😄
+
 
 ## Screenshots
 
