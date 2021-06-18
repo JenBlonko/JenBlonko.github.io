@@ -13,14 +13,14 @@ nav a{
     border: none;
     outline: none;
     color: #fff;
-    background: rgb(214, 14, 14);
+    background: rgb(0, 0, 0);
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
     font-family: 'Kosugi_Maru';
     font-weight: 100;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .button-black:before {
@@ -58,7 +58,7 @@ nav a{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: rgb(214, 14, 14);
     left: 0;
     top: 0;
     border-radius: 10px;
