@@ -1,5 +1,5 @@
 
-const width = "250px";
+const width = "280px";
 
 function openNav() {
     document.querySelector(".sidenav").style.width = width;

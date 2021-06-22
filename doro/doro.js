@@ -10,6 +10,7 @@ const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
 const plus5 = document.querySelector("#plus5");
+const plus1 = document.querySelector("#plus1");
 const pause = document.querySelector("#pause");
 const play = document.querySelector("#play");
 const nextEventInfo = document.querySelector(".next-event-info");
@@ -23,6 +24,8 @@ const beep = document.querySelector("#notificationSound");
 startButton.textContent = "START";
 plus5.textContent = "+5";
 plus5.style.visibility = "hidden";
+plus1.textContent = "+1";
+plus1.style.visibility = "hidden";
 pause.style.visibility = "hidden";
 play.style.visibility = "hidden";
 startButton.addEventListener("click", function () {
@@ -86,6 +89,7 @@ const startCountdown = function (mins, secs) {
   endTime = now + mins * 60 * 1000 + secs * 1000;
   displayTime(Math.round((endTime - Date.now()) / 1000));
   plus5.style.visibility = "visible";
+  plus1.style.visibility = "visible";
   pause.style.visibility = "visible";
   play.style.visibility = "hidden";
   paused = false;
@@ -103,6 +107,7 @@ const startCountdown = function (mins, secs) {
         nextEventInfo.textContent = "Dont you dare click on next Episode!";
         startButton.textContent = "START";
         plus5.style.visibility = "hidden";
+        plus1.style.visibility = "hidden";
         timeMins = workTime;
         watchingAnime = false;
         paused = true;
@@ -118,6 +123,7 @@ const startCountdown = function (mins, secs) {
         timeMins = animeTime;
         nextEventInfo.textContent = "You can watch Anime now";
         plus5.style.visibility = "hidden";
+        plus1.style.visibility = "hidden";
         startButton.textContent = "START";
         watchingAnime = true;
         paused = true;
@@ -142,6 +148,12 @@ const displayTime = function (seconds) {
 
 const add5mins = function () {
   endTime += 5 * 60 * 1000;
+  //displayTime(Date.now() - endTime);
+  updateEventDetails(endTime);
+};
+
+const add1min = function () {
+  endTime += 1 * 60 * 1000;
   //displayTime(Date.now() - endTime);
   updateEventDetails(endTime);
 };

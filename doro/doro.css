@@ -8,6 +8,11 @@
   src: url("../Fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../Fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -36,17 +41,26 @@ main {
   margin: 5px;
   text-align: center;
   font-weight: lighter;
-  color: white;
+  color: rgb(214, 14, 14);
   text-size-adjust: auto;
   letter-spacing: 5px;
 }
 
 header h1 {
   text-align: center;
-  font-family: "manga";
-  font-size: 10vw;
+  font-family: "Kosugi_Maru";
+  font-size: 11vw;
   font-size-adjust: auto;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+header h2 {
+  text-align: center;
+  font-family: "Kosugi_Maru";
+  font-size: 5vw;
+  font-size-adjust: auto;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: black;
 }
 
@@ -70,18 +84,18 @@ main .settings {
 }
 
 details {
-  /*margin-left: 200px; /* Same as the width of the sidebar */
+  /*margin-left: 280px; /* Same as the width of the sidebar */
   /*left: 10px;*/
   margin: 1px;
   background-color: #10101000;
   bottom: -5px;
   color: white;
   text-align: left;
-  font-family: "bebas";
-  letter-spacing: 0.2vw;
-  font-size: 2vh;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: white;
+  font-family: "Roboto";
+  letter-spacing: 0.1vw;
+  font-size: 2.4vh;
+  -webkit-text-stroke-width: 0.02px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .counter {
