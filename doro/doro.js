@@ -2,7 +2,7 @@ var interval;
 let endTime = Date.now() + 40 * 60 * 1000;
 let watchingAnime = false;
 let animeTime = 20;
-let workTime = 40;
+let workTime = 60;
 let timeMins = workTime;
 let paused = false;
 
