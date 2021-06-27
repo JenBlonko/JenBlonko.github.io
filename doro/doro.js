@@ -9,6 +9,7 @@ let paused = false;
 const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
+const finishButton = document.querySelector("#finish-button");
 const plus5 = document.querySelector("#plus5");
 const plus1 = document.querySelector("#plus1");
 const pause = document.querySelector("#pause");
@@ -22,6 +23,8 @@ const studyHoursCounter = document.querySelector(".total-count-study");
 const beep = document.querySelector("#notificationSound");
 
 startButton.textContent = "START";
+finishButton.textContent = "FINISH";
+finishButton.style.visibility = "hidden";
 plus5.textContent = "+5";
 plus5.style.visibility = "hidden";
 plus1.textContent = "+1";
@@ -91,6 +94,7 @@ const startCountdown = function (mins, secs) {
   plus5.style.visibility = "visible";
   plus1.style.visibility = "visible";
   pause.style.visibility = "visible";
+  finishButton.style.visibility = "visible";
   play.style.visibility = "hidden";
   paused = false;
   interval = setInterval(() => {
@@ -106,6 +110,8 @@ const startCountdown = function (mins, secs) {
         clearInterval(interval);
         nextEventInfo.textContent = "Dont you dare click on next Episode!";
         startButton.textContent = "START";
+        finishButton.style.visibility = "hidden";
+        pause.style.visibility = "hidden";
         plus5.style.visibility = "hidden";
         plus1.style.visibility = "hidden";
         timeMins = workTime;
@@ -122,9 +128,12 @@ const startCountdown = function (mins, secs) {
         clearInterval(interval);
         timeMins = animeTime;
         nextEventInfo.textContent = "You can watch Anime now";
+        finishButton.style.visibility = "hidden";
+        pause.style.visibility = "hidden";
         plus5.style.visibility = "hidden";
         plus1.style.visibility = "hidden";
         startButton.textContent = "START";
+        finishButton.textContent = "FINISH";
         watchingAnime = true;
         paused = true;
         notify("You can take a break now", "Go watch that episode!\n");
@@ -154,6 +163,12 @@ const add5mins = function () {
 
 const add1min = function () {
   endTime += 1 * 60 * 1000;
+  //displayTime(Date.now() - endTime);
+  updateEventDetails(endTime);
+};
+
+const finishClicked = function () {
+  endTime = 1000;
   //displayTime(Date.now() - endTime);
   updateEventDetails(endTime);
 };
