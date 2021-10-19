@@ -2,3 +2,8 @@ theme: jekyll-theme-architect
 paginate: 5
 plugins:
 - jekyll-paginate
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
