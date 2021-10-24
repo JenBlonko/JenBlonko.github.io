@@ -2,10 +2,11 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-<script>
-document.title = <a href="{{ post.title }}"> | Codon Stream</a>
-</script>
+{% for post in paginator.posts %)
+
+<head>
+  <title><a href="{{ post.title }}">| Codon Stream</a></title>
+</head>
 {% endfor %}
 
 {{ content }}
