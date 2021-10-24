@@ -1,8 +1,16 @@
----
-layout: default
----
-<head>
-  <title>Post</title>
-  </head>
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("default.html"); 
+    });
+    </script> 
+  </head> 
 
-{{ content }}
+  <body> 
+    {{ content }}
+  </body> 
+</html>
+
+
