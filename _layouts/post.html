@@ -3,10 +3,8 @@ layout: default
 ---
 
 {% for post in paginator.posts %)
-
-<head>
-  <title><a href="{{ post.title }}">| Codon Stream</a></title>
-</head>
+<head><title>{{ post.title }}| Codon Stream</title></head>
+&nbsp;
 {% endfor %}
 
 {{ content }}
