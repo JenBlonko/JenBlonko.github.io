@@ -1,4 +1,5 @@
 theme: jekyll-theme-architect
+title: Codon Stream
 paginate: 5
 plugins:
 - jekyll-paginate
