@@ -1,8 +1,12 @@
 ---
 layout: default
 ---
-<head>
-<title>Codon Stream | {{ post.title }}</title>
-</head>
 
+<script>
+  $(function(){
+    document.querySelector('title').textContent
+      = newPageTitle;
+    });
+</script>
+          
 {{ content }}
