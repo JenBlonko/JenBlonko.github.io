@@ -1,5 +1,6 @@
 theme: jekyll-theme-architect
 title: Codon Stream
+description: Homepage
 paginate: 5
 plugins:
 - jekyll-paginate
